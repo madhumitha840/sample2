@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGE GALLERY-EASY TUTORIALS</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <div class="full-img " id="fullImgBox">
+        <img src="camera.jpeg" id="fullImg">
+        <span onclick="closefullImg()">X</span>
+    </div>
+    <div class="img-gallery" >
+       <img src="camera.jpeg"  onclick="openfullImg(this.src)">
+       <img src="car.jpeg"     onclick="openfullImg(this.src)">
+       <img src="ice.jpeg"     onclick="openfullImg(this.src)">
+       <img src="icee.jpeg"    onclick="oprnfullImg(this.src)">
+       <img src="laptop.jpeg"  onclick="openfullImg(this.src)">
+       <img src="watch.jpeg"   onclick="openfullImg(this.src)">
+       <img src="lamp.jpg"     onclick="openfullImg(this.src)">
+       <img src="dog2.ima.jpeg" onclick="openfullImg(this.src)">
+    </div>
+    <script>
+        var fullImgBox=document.getElementById("fullImgBox");
+        var fullImg=document.getElementById("fullImg");
+
+        function openfullImg(pic){
+            fullImgBox.style.display="flex";
+            fullImg.src=pic;
+        }
+        function closefullImg(){
+            fullImgBox.style.display="none";
+
+        }
+    </script>
+</body>
+</html>
